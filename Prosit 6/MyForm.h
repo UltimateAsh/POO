@@ -63,6 +63,7 @@ namespace EIA2MININFPOOP6 {
 	private: int id;
 	private: System::Windows::Forms::TextBox^ debugText;
 	private: System::Windows::Forms::Label^ DebugBox;
+	private: System::Windows::Forms::Button^ button1;
 
 
 
@@ -97,15 +98,15 @@ namespace EIA2MININFPOOP6 {
 			   this->txt_message = (gcnew System::Windows::Forms::TextBox());
 			   this->debugText = (gcnew System::Windows::Forms::TextBox());
 			   this->DebugBox = (gcnew System::Windows::Forms::Label());
+			   this->button1 = (gcnew System::Windows::Forms::Button());
 			   (cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dgv_adresses))->BeginInit();
 			   this->SuspendLayout();
 			   // 
 			   // btn_first
 			   // 
-			   this->btn_first->Location = System::Drawing::Point(33, 242);
-			   this->btn_first->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->btn_first->Location = System::Drawing::Point(22, 157);
 			   this->btn_first->Name = L"btn_first";
-			   this->btn_first->Size = System::Drawing::Size(60, 35);
+			   this->btn_first->Size = System::Drawing::Size(40, 23);
 			   this->btn_first->TabIndex = 0;
 			   this->btn_first->Text = L"<<";
 			   this->btn_first->UseVisualStyleBackColor = true;
@@ -113,65 +114,58 @@ namespace EIA2MININFPOOP6 {
 			   // 
 			   // txt_id
 			   // 
-			   this->txt_id->Location = System::Drawing::Point(33, 40);
-			   this->txt_id->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->txt_id->Location = System::Drawing::Point(22, 26);
 			   this->txt_id->Name = L"txt_id";
 			   this->txt_id->ReadOnly = true;
-			   this->txt_id->Size = System::Drawing::Size(265, 26);
+			   this->txt_id->Size = System::Drawing::Size(178, 20);
 			   this->txt_id->TabIndex = 1;
 			   // 
 			   // txt_nom
 			   // 
-			   this->txt_nom->Location = System::Drawing::Point(33, 109);
-			   this->txt_nom->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->txt_nom->Location = System::Drawing::Point(22, 71);
 			   this->txt_nom->Name = L"txt_nom";
-			   this->txt_nom->Size = System::Drawing::Size(265, 26);
+			   this->txt_nom->Size = System::Drawing::Size(178, 20);
 			   this->txt_nom->TabIndex = 2;
 			   // 
 			   // lbl_id
 			   // 
 			   this->lbl_id->AutoSize = true;
-			   this->lbl_id->Location = System::Drawing::Point(28, 15);
-			   this->lbl_id->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			   this->lbl_id->Location = System::Drawing::Point(19, 10);
 			   this->lbl_id->Name = L"lbl_id";
-			   this->lbl_id->Size = System::Drawing::Size(23, 20);
+			   this->lbl_id->Size = System::Drawing::Size(16, 13);
 			   this->lbl_id->TabIndex = 3;
 			   this->lbl_id->Text = L"Id";
 			   // 
 			   // lbl_nom
 			   // 
 			   this->lbl_nom->AutoSize = true;
-			   this->lbl_nom->Location = System::Drawing::Point(28, 85);
-			   this->lbl_nom->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			   this->lbl_nom->Location = System::Drawing::Point(19, 55);
 			   this->lbl_nom->Name = L"lbl_nom";
-			   this->lbl_nom->Size = System::Drawing::Size(42, 20);
+			   this->lbl_nom->Size = System::Drawing::Size(29, 13);
 			   this->lbl_nom->TabIndex = 4;
 			   this->lbl_nom->Text = L"Nom";
 			   // 
 			   // lbl_prenom
 			   // 
 			   this->lbl_prenom->AutoSize = true;
-			   this->lbl_prenom->Location = System::Drawing::Point(28, 158);
-			   this->lbl_prenom->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			   this->lbl_prenom->Location = System::Drawing::Point(19, 103);
 			   this->lbl_prenom->Name = L"lbl_prenom";
-			   this->lbl_prenom->Size = System::Drawing::Size(64, 20);
+			   this->lbl_prenom->Size = System::Drawing::Size(43, 13);
 			   this->lbl_prenom->TabIndex = 5;
 			   this->lbl_prenom->Text = L"Prénom";
 			   // 
 			   // txt_prenom
 			   // 
-			   this->txt_prenom->Location = System::Drawing::Point(33, 183);
-			   this->txt_prenom->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->txt_prenom->Location = System::Drawing::Point(22, 119);
 			   this->txt_prenom->Name = L"txt_prenom";
-			   this->txt_prenom->Size = System::Drawing::Size(265, 26);
+			   this->txt_prenom->Size = System::Drawing::Size(178, 20);
 			   this->txt_prenom->TabIndex = 6;
 			   // 
 			   // btn_previous
 			   // 
-			   this->btn_previous->Location = System::Drawing::Point(102, 242);
-			   this->btn_previous->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->btn_previous->Location = System::Drawing::Point(68, 157);
 			   this->btn_previous->Name = L"btn_previous";
-			   this->btn_previous->Size = System::Drawing::Size(60, 35);
+			   this->btn_previous->Size = System::Drawing::Size(40, 23);
 			   this->btn_previous->TabIndex = 7;
 			   this->btn_previous->Text = L"<";
 			   this->btn_previous->UseVisualStyleBackColor = true;
@@ -179,10 +173,9 @@ namespace EIA2MININFPOOP6 {
 			   // 
 			   // button2
 			   // 
-			   this->button2->Location = System::Drawing::Point(240, 242);
-			   this->button2->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->button2->Location = System::Drawing::Point(160, 157);
 			   this->button2->Name = L"button2";
-			   this->button2->Size = System::Drawing::Size(60, 35);
+			   this->button2->Size = System::Drawing::Size(40, 23);
 			   this->button2->TabIndex = 8;
 			   this->button2->Text = L">>";
 			   this->button2->UseVisualStyleBackColor = true;
@@ -190,10 +183,9 @@ namespace EIA2MININFPOOP6 {
 			   // 
 			   // button3
 			   // 
-			   this->button3->Location = System::Drawing::Point(171, 242);
-			   this->button3->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->button3->Location = System::Drawing::Point(114, 157);
 			   this->button3->Name = L"button3";
-			   this->button3->Size = System::Drawing::Size(60, 35);
+			   this->button3->Size = System::Drawing::Size(40, 23);
 			   this->button3->TabIndex = 9;
 			   this->button3->Text = L">";
 			   this->button3->UseVisualStyleBackColor = true;
@@ -202,29 +194,26 @@ namespace EIA2MININFPOOP6 {
 			   // dgv_adresses
 			   // 
 			   this->dgv_adresses->ColumnHeadersHeightSizeMode = System::Windows::Forms::DataGridViewColumnHeadersHeightSizeMode::AutoSize;
-			   this->dgv_adresses->Location = System::Drawing::Point(324, 37);
-			   this->dgv_adresses->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->dgv_adresses->Location = System::Drawing::Point(216, 24);
 			   this->dgv_adresses->Name = L"dgv_adresses";
 			   this->dgv_adresses->RowHeadersWidth = 82;
-			   this->dgv_adresses->Size = System::Drawing::Size(556, 374);
+			   this->dgv_adresses->Size = System::Drawing::Size(371, 243);
 			   this->dgv_adresses->TabIndex = 10;
 			   // 
 			   // lbl_adresse
 			   // 
 			   this->lbl_adresse->AutoSize = true;
-			   this->lbl_adresse->Location = System::Drawing::Point(320, 12);
-			   this->lbl_adresse->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			   this->lbl_adresse->Location = System::Drawing::Point(213, 8);
 			   this->lbl_adresse->Name = L"lbl_adresse";
-			   this->lbl_adresse->Size = System::Drawing::Size(76, 20);
+			   this->lbl_adresse->Size = System::Drawing::Size(50, 13);
 			   this->lbl_adresse->TabIndex = 11;
 			   this->lbl_adresse->Text = L"Adresses";
 			   // 
 			   // btn_nouveau
 			   // 
-			   this->btn_nouveau->Location = System::Drawing::Point(33, 286);
-			   this->btn_nouveau->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->btn_nouveau->Location = System::Drawing::Point(22, 186);
 			   this->btn_nouveau->Name = L"btn_nouveau";
-			   this->btn_nouveau->Size = System::Drawing::Size(129, 35);
+			   this->btn_nouveau->Size = System::Drawing::Size(86, 23);
 			   this->btn_nouveau->TabIndex = 12;
 			   this->btn_nouveau->Text = L"Nouveau";
 			   this->btn_nouveau->UseVisualStyleBackColor = true;
@@ -232,10 +221,9 @@ namespace EIA2MININFPOOP6 {
 			   // 
 			   // btn_maj
 			   // 
-			   this->btn_maj->Location = System::Drawing::Point(33, 331);
-			   this->btn_maj->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->btn_maj->Location = System::Drawing::Point(22, 215);
 			   this->btn_maj->Name = L"btn_maj";
-			   this->btn_maj->Size = System::Drawing::Size(129, 35);
+			   this->btn_maj->Size = System::Drawing::Size(86, 23);
 			   this->btn_maj->TabIndex = 13;
 			   this->btn_maj->Text = L"Mise à jour";
 			   this->btn_maj->UseVisualStyleBackColor = true;
@@ -243,10 +231,9 @@ namespace EIA2MININFPOOP6 {
 			   // 
 			   // btn_sup
 			   // 
-			   this->btn_sup->Location = System::Drawing::Point(33, 375);
-			   this->btn_sup->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->btn_sup->Location = System::Drawing::Point(22, 244);
 			   this->btn_sup->Name = L"btn_sup";
-			   this->btn_sup->Size = System::Drawing::Size(129, 35);
+			   this->btn_sup->Size = System::Drawing::Size(86, 23);
 			   this->btn_sup->TabIndex = 14;
 			   this->btn_sup->Text = L"Supprimer";
 			   this->btn_sup->UseVisualStyleBackColor = true;
@@ -254,10 +241,9 @@ namespace EIA2MININFPOOP6 {
 			   // 
 			   // btn_enr
 			   // 
-			   this->btn_enr->Location = System::Drawing::Point(171, 286);
-			   this->btn_enr->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->btn_enr->Location = System::Drawing::Point(114, 186);
 			   this->btn_enr->Name = L"btn_enr";
-			   this->btn_enr->Size = System::Drawing::Size(129, 125);
+			   this->btn_enr->Size = System::Drawing::Size(86, 81);
 			   this->btn_enr->TabIndex = 15;
 			   this->btn_enr->Text = L"Enregistrer";
 			   this->btn_enr->UseVisualStyleBackColor = true;
@@ -266,45 +252,51 @@ namespace EIA2MININFPOOP6 {
 			   // lbl_message
 			   // 
 			   this->lbl_message->AutoSize = true;
-			   this->lbl_message->Location = System::Drawing::Point(28, 445);
-			   this->lbl_message->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			   this->lbl_message->Location = System::Drawing::Point(19, 289);
 			   this->lbl_message->Name = L"lbl_message";
-			   this->lbl_message->Size = System::Drawing::Size(74, 20);
+			   this->lbl_message->Size = System::Drawing::Size(50, 13);
 			   this->lbl_message->TabIndex = 16;
 			   this->lbl_message->Text = L"Message";
 			   // 
 			   // txt_message
 			   // 
-			   this->txt_message->Location = System::Drawing::Point(33, 469);
-			   this->txt_message->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->txt_message->Location = System::Drawing::Point(22, 305);
 			   this->txt_message->Multiline = true;
 			   this->txt_message->Name = L"txt_message";
-			   this->txt_message->Size = System::Drawing::Size(846, 72);
+			   this->txt_message->Size = System::Drawing::Size(565, 48);
 			   this->txt_message->TabIndex = 17;
 			   // 
 			   // debugText
 			   // 
-			   this->debugText->Location = System::Drawing::Point(716, 429);
-			   this->debugText->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
+			   this->debugText->Location = System::Drawing::Point(477, 279);
 			   this->debugText->Name = L"debugText";
-			   this->debugText->Size = System::Drawing::Size(163, 26);
+			   this->debugText->Size = System::Drawing::Size(110, 20);
 			   this->debugText->TabIndex = 18;
 			   // 
 			   // DebugBox
 			   // 
 			   this->DebugBox->AutoSize = true;
-			   this->DebugBox->Location = System::Drawing::Point(639, 434);
-			   this->DebugBox->Margin = System::Windows::Forms::Padding(4, 0, 4, 0);
+			   this->DebugBox->Location = System::Drawing::Point(426, 282);
 			   this->DebugBox->Name = L"DebugBox";
-			   this->DebugBox->Size = System::Drawing::Size(65, 20);
+			   this->DebugBox->Size = System::Drawing::Size(45, 13);
 			   this->DebugBox->TabIndex = 19;
 			   this->DebugBox->Text = L"Debug :";
 			   // 
+			   // button1
+			   // 
+			   this->button1->Location = System::Drawing::Point(131, 277);
+			   this->button1->Name = L"button1";
+			   this->button1->Size = System::Drawing::Size(104, 22);
+			   this->button1->TabIndex = 20;
+			   this->button1->Text = L"Achraf";
+			   this->button1->UseVisualStyleBackColor = true;
+			   // 
 			   // MyForm
 			   // 
-			   this->AutoScaleDimensions = System::Drawing::SizeF(9, 20);
+			   this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			   this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			   this->ClientSize = System::Drawing::Size(915, 562);
+			   this->ClientSize = System::Drawing::Size(610, 365);
+			   this->Controls->Add(this->button1);
 			   this->Controls->Add(this->DebugBox);
 			   this->Controls->Add(this->debugText);
 			   this->Controls->Add(this->txt_message);
@@ -325,7 +317,6 @@ namespace EIA2MININFPOOP6 {
 			   this->Controls->Add(this->txt_nom);
 			   this->Controls->Add(this->txt_id);
 			   this->Controls->Add(this->btn_first);
-			   this->Margin = System::Windows::Forms::Padding(4, 5, 4, 5);
 			   this->Name = L"MyForm";
 			   this->Text = L"MyForm";
 			   this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
